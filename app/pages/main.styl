@@ -1,0 +1,137 @@
+/*! Главная */
+.main__news
+  background-image url(../images/main__bambuk-left.png)
+  background-position left center
+  background-repeat no-repeat
+
+.main__news-ttl
+  margin 30px 0
+  .title-left
+    font-size 30px
+    color #494949
+
+.main__bg-bottom
+  background-image url(../images/main__bambuk-left.png)
+  background-position left bottom
+  background-repeat no-repeat
+
+
+
+/*! Добро пожаловать */
+.main__news-welcome
+  shadowTxtBlocks()
+  background-color block-pic-top-bg
+  padding 40px
+  padding-top 30px
+  height 100%
+
+.main__news-welcome-ttl
+  color #585858
+  font-size 39px
+  font-weight 600
+  display inline-block
+  border-bottom 1px solid #959595
+  padding-bottom 10px
+  margin-bottom 20px
+
+.main__news-welcome-txt
+  font-size 18px
+  font-weight 300
+  line-height 22px
+/*! /Добро пожаловать */
+
+/*! Последние актуальные новости */
+@media screen and (max-width 768px)
+  .block-pic-left
+    flex-direction column
+  .block-pic-left__pic
+    height 220px
+    max-width inherit !important
+/*! /Последние актуальные новости */
+
+//! Важные статьи
+.main__articles
+  color #494949
+  .title-left
+    margin 30px 0
+    font-size 30px
+//! /Важные статьи
+
+//! СЕО текст
+.seo-center,
+.main-seo
+  margin-bottom 50px
+
+.seo-center-ttl
+  margin 50px 0
+  .title-center__line-text
+    font-size 30px
+    color #494949
+.main-seo-ttl
+  margin 50px 0
+  .title-center__line-text
+    font-size 30px
+    color #494949
+
+.seo-center-txt,
+.main-seo__text
+  font-size 16px
+  font-weight 300
+  color #343434
+
+.main-seo__more
+  position relative
+  color #739214
+  font-size 16px
+  cursor pointer
+  font-weight 600
+  display inline-block
+  width 180px
+  height 24px
+  margin-top 30px
+
+.main-seo__more-show,
+.main-seo__more-hide
+  position absolute
+  left 0
+  top 50%
+  transform translateY(-50%)
+
+.main-seo__text-wrap
+  position relative
+  height 250px
+  overflow hidden
+  transition .3s ease
+
+.main-seo__more-hide
+  position absolute
+  left 0
+  bottom 0
+  opacity 0
+  transition .2s ease
+
+.main-seo__more-show
+  opacity 1
+  transition .2s ease
+
+.main-seo.active .main-seo__more .main-seo__more-show
+  opacity 0
+
+.main-seo.active .main-seo__more .main-seo__more-hide
+  opacity 1
+
+.main-seo__text-grad
+  position absolute
+  height 100px
+  width 100%
+  left 0
+  bottom 0
+  background linear-gradient(to bottom, rgba(237,237,237,0), #fff)
+  transition .3s ease
+
+.main-seo.active .main-seo__text-grad
+  height 1px
+//! /СЕО текст
+
+
+/*! /Главная */

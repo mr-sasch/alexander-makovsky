@@ -1,0 +1,165 @@
+/*! Главное меню */
+.navbar
+  width 100%
+  background-color rgba(#2d2d2d, 0.9)
+
+.navbar__navs
+  display -webkit-flex
+  display -ms-flex
+  display flex
+  justify-content space-between
+  width 100%
+  max-width 620px
+  flex-wrap wrap
+  padding 10px
+@media screen and (max-width 768px)
+  .navbar__navs
+    width initial
+
+.navbar__navs-nav-a
+  color lightgrey
+  transition .2s ease
+.navbar__navs-nav-a:hover,
+.navbar__navs-nav-a.active
+  text-decoration none
+  color #9fbd55
+
+
+.navbar__contacts
+  padding-right 10px
+
+.navbar__contacts-phone
+  display -webkit-flex
+  display -ms-flex
+  display flex
+  flex-direction column
+
+.navbar__contacts-item
+  display -webkit-flex
+  display -ms-flex
+  display flex
+  flex-direction row
+  align-items center
+  color textGreen
+  font-size 16px
+
+.navbar__contacts-item-txt
+  padding-left 8px
+
+.navbar__search
+  position relative
+  min-width 36px
+  height 30px
+  background-color rgba(45,45,45,0.639)
+
+.navbar__search-input
+  position absolute
+  background-color transparent
+  border 1px solid lightgrey
+  height 100%
+  width 36px
+  top 0
+  right 0
+  transition .2s ease
+  color transparent
+  padding-left 10px
+  border-radius 2px
+.navbar__search-input:focus
+  background-color bgnav
+  outline none
+  width 200px
+  color #fff
+
+.navbar__search:before
+  content ''
+  position absolute
+  top 3px
+  bottom 3px
+  right 3px
+  left 3px
+  background-image url('../images/navbar__search.png')
+  background-repeat no-repeat
+  background-position center
+  background-size contain
+
+.navbar__navs-separ
+  width 1px
+  background-color #fff
+  margin 4px 0
+
+.navbar__navs-more
+  color lightgrey
+  position relative
+
+.navbar__navs-more-navs
+  position absolute
+  display -webkit-flex
+  display -ms-flex
+  display flex
+  flex-direction column
+  background-color rgba(#2d2d2d, 0.9)
+  min-width 240px
+  right -20px
+  top 100%
+  padding 20px
+
+  opacity 0
+  top -1000px
+  transition opacity .2s ease
+
+.navbar__navs-more:hover .navbar__navs-more-navs
+  opacity 1
+  top 100%
+
+.navbar__navs-nav-a-more
+  padding 5px 0
+
+.navbar__navs-nav
+  position relative
+
+.navbar__navs-nav-inner
+  position absolute
+  top -1000px
+  opacity 0
+  background-color rgba(0, 0, 0, 0.6)
+  padding 10px 0px
+  left -30px
+  right -30px
+  transition opacity .2s ease
+  z-index 20
+
+.navbar__navs-nav:hover
+  .navbar__navs-nav-inner
+    opacity 1
+    top 100%
+    transition opacity .2s ease
+
+.navbar__navs-inner-a
+  display block
+  color #d3d3d3
+  transition .2s ease
+  padding 4px 20px
+  line-height 1em
+
+.navbar__navs-inner-a:hover
+  color #9fbd55
+  text-decoration none
+
+.navbar__navs-nav_inner-label
+  position relative
+  width 6px
+  height 6px
+  display inline-block
+  padding 9px 6px
+
+.navbar__navs-nav_inner-label:before
+  position absolute
+  content ''
+  border 1px solid textGreen
+  width 6px
+  height 6px
+  border-left none
+  border-top none
+  transform rotate(45deg)
+
+/* /Главное меню */
