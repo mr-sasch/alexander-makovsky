@@ -1,5 +1,5 @@
 {
-  "name": "medium-template",
+  "name": "alexander",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -18,5 +18,14 @@
     "gulp-watch": "^5.0.1",
     "pug": "^2.0.3",
     "watch": "^1.0.2"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mr-sasch/alexander-makovsky.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mr-sasch/alexander-makovsky/issues"
+  },
+  "homepage": "https://github.com/mr-sasch/alexander-makovsky#readme"
 }
