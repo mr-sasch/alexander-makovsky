@@ -24,14 +24,10 @@ header {
   align-items: center;
   justify-content: center;
 }
-.bullets-wrapper {
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  flex-grow: 1px;
-}
 .bullets {
   display: flex;
+  justify-content: center;
+  width: 100%;
 }
 .bullets__bullet {
   width: 14px;
@@ -49,7 +45,10 @@ header {
   background-color: #888;
 }
 .menu {
-  flex-grow: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .cart-item {
   box-shadow: 0 5px 35px 0 rgba(0,0,0,0.2);

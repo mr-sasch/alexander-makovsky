@@ -21,13 +21,10 @@ header
   justify-content center
 
 /*    Буллеты */
-.bullets-wrapper
-  display -webkit-flex
-  display -ms-flex
-  display flex
-  flex-grow 1px
 .bullets
   display flex
+  justify-content center
+  width 100%
 .bullets__bullet
   width 14px
   height 14px
@@ -46,7 +43,10 @@ header
 
 /*    Меню */
 .menu
-  flex-grow 0
+  position absolute
+  right 0
+  top 50%
+  transform translateY(-50%)
 /*    /Меню */
 
 /*  /Шапка */
