@@ -9,7 +9,7 @@ gulp.task('styl', function () {
     .pipe(sourcemaps.init())
     .pipe(stylus())
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest('dist/assets/'));
+    .pipe(gulp.dest('docs/assets/'));
 });
 
 // Pug
@@ -19,7 +19,7 @@ gulp.task('pug', function() {
   .pipe(pug({
     pretty: true
   }))
-  .pipe(gulp.dest('dist/'))
+  .pipe(gulp.dest('docs/'))
 });
 
 // Watch
@@ -38,7 +38,7 @@ gulp.task('pugCur', function() {
   .pipe(pug({
     pretty: true
   }))
-  .pipe(gulp.dest('dist/'))
+  .pipe(gulp.dest('docs/'))
 });
 gulp.task('cur', function() {
   gulp.watch('app/**/*.styl', ['styl']);
