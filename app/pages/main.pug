@@ -19,12 +19,37 @@ html(lang="en")
   body
     //- Подключаем миксины
     include ../blocks/mixins
-    // Header 
+    // Header
     include ../blocks/header
     // Content
     //- Здесь контент страницы -//
     .pages
-      #about.style_section.style_table.style_easing(style="z-index: 6; transform: translate3d(0px, 0px, 0px);")
+      #about.hidden.style_section.style_table.style_easing(style="z-index: 6; transform: translate3d(0px, 0px, 0px);")
+        .container-fluid
+          .row
+            .col-12
+              .cart-item
+      #services.hidden.style_section.style_table.style_easing(style="z-index: 5; transform: translate3d(0px, 0px, 0px);")
+        .container-fluid
+          .row
+            .col-12
+              .cart-item
+      #portfolio.hidden.style_section.style_table.style_easing(style="z-index: 4; transform: translate3d(0px, 0px, 0px);")
+        .container-fluid
+          .row
+            .col-12
+              .cart-item
+      #skills.show.style_section.style_table.style_easing(style="z-index: 3; transform: translate3d(0px, 0px, 0px);")
+        .container-fluid
+          .row
+            .col-12
+              .cart-item
+      #blog.show.style_section.style_table.style_easing(style="z-index: 2; transform: translate3d(0px, 0px, 0px);")
+        .container-fluid
+          .row
+            .col-12
+              .cart-item
+      #contacts.show.style_section.style_table.style_easing(style="z-index: 1; transform: translate3d(0px, 0px, 0px);")
         .container-fluid
           .row
             .col-12
@@ -35,4 +60,5 @@ html(lang="en")
     // Footer 
     include ../blocks/footer
     //- // Свои скрипты
+    script(src='assets/scripts.js')
     //- block customScripts

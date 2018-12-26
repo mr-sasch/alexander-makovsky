@@ -29,18 +29,3 @@ gulp.task('watch', function() {
   gulp.watch('app/**/*.styl', ['styl']);
   gulp.watch('app/**/*.pug', ['pug']);
 });
-
-
-// Только текущий файл
-var pugCur = require('gulp-pug');
-gulp.task('pugCur', function() {
-  return gulp.src('app/pages/in-progress/*.pug')
-  .pipe(pug({
-    pretty: true
-  }))
-  .pipe(gulp.dest('docs/'))
-});
-gulp.task('cur', function() {
-  gulp.watch('app/**/*.styl', ['styl']);
-  gulp.watch('app/pages/in-progress/*.pug', ['pugCur']);
-});

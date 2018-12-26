@@ -59,6 +59,28 @@ header {
   background: #fff;
 }
 /* /Главная */
+.hidden {
+  right: 100%;
+}
+.demo .block {
+  height: 100px;
+}
+.demo li {
+  width: 100px;
+  margin: auto;
+}
+.demo .brd {
+  border: 1px solid;
+}
+.demo a {
+  height: 100px;
+}
+.demo .red {
+  border: 1px solid #f00;
+}
+.demo .green {
+  border: 1px solid #008000;
+}
 /* Общие стили */
 .style_table-cell {
   display: table-cell;
